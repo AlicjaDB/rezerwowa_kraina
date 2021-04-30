@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezerwacja lotu</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/index.css">
+</head>
+<body>
+    
+    
+        <header class="header">
+            <class class="logo">
+                <img src="assets/img/preview.jpg">
+            </class>
+    
+
+        <nav> 
+            <ul>
+                <li ><a href="" id= "info">Informacje</a></li>
+                <li ><a href="" id ="in">Zaloguj się</a></li>
+                <li ><a href="" id="lang">Język</a></li>
+            </ul>
+        </nav>
+        </header>
+        <main>
+            
+            
+    <div class="popup-content">
+                    <div class="popup-content1">
+                    <img src="./assets/img/cancel.png" alt="Cancel" class="cancel">
+                    <img class="user" src="./assets/img/user.png" alt="User">
+                    <input class="input1" type="text" placeholder="Nazwa użytkownika">
+                    <input class="input2" type="password" placeholder="Hasło">
+                    <a href="#" class="button" id="button" >Zaloguj się</a>
+                    </div>
+                    
+                    
+                </div>
+        <div class="booking">
+            
+            <form action=""  >
+                <div class="container2">
+                
+            <select name="Miejsce wylotu" id="select1">
+                    <option disabled hidden selected>Miejsce wylotu</option>
+                    <option value="Kraków" id="krk">Kraków </option>
+                    <option value="Katowice" id="ktw">Katowice</option>
+                    <option value="Rzeszów" id="rz">Rzeszów</option>
+                </select>
+                
+            <select name="Miejsce Przylotu" id="select2">
+                    <option value="Miejsce przylotu">Miejsce przylotu</option>
+                    <option value="Paryż" id="pzr">Paryż</option>
+                    <option value="New York" id="ny">New York</option>
+                    <option value="Tajlandia" id="tj">Tajlandia</option>
+                </select>
+                
+                <label for="arrivalDate">Wybierz datę wylotu</label>
+                <input type="date" name="arrivalDate" id="arrivaldate" >
+                <label for="departureDate">Wybierz datę powrotu</label>
+                <input type="date"name="departureDate" id="departuredate">
+                <select type="Liczba" id="select3">
+                <option value="">Wybierz ilość pasażerów</option>
+                <option value="1 pasażer" id="one">1 pasażer</option>
+                <option value="2 pasażerów" id="two">2 pasażerów</option>
+                <option value="3 pasażerów"id="three">3 pasażerów</option>
+                </select>
+                
+                <a href="" class="submit" id="xxx">Rezerwuj</a>
+                
+            </div>
+        </form>
+        
+    </div>
+
+    <div class="wyswietlanie">
+        <table>
+        <h2>Wybrane opcje</h2>
+        <td>Miejsce wylotu: <span id="result-name">
+        </td>
+        <td>
+        Miejsce przylotu: <span id="result-name1">
+        </td>
+        <td>Data przylotu: <span id="result-przylotu">
+        </td>
+        <td>Data powrotu: <span id="result-powrotu">
+        </td>
+        <td>Ilość pasażerów: <span id="ilosc-pasazerow">
+        </td>
+        <td>Cena: <span id="cena">
+        </td>
+    </table>
+    <a href="" class="submit6" id="xxx" >Kontynuuj</a>
+    </div>
+    
+    <div class="container3"><p>Sprawdź pogodę</p>
+    <input type="text" placeholder="Enter City Name" class="pogoda">
+    <input type="submit" value="Wybierz" class="submit8">
+    <div class="location">
+        <div class="card">
+        <h1 class="name" id="name"></h1>
+        <p class="temp">
+        <img id="icon" src="https://openweathermap.org/img/wn/04n.png" alt="" />
+        </p>
+        <p><span id="temp-value">......</span> <span id="temp-unit" >&#176c</span> </p>
+        <p class="desc">.....</p>
+        </div>
+        <div class="datetime">
+        <div class="date">
+        <div id="date_now">
+        </div>
+        <div class="time">
+        <div id="time_now">
+        </div>
+        </div>
+        
+    </div>
+        
+    </div>
+    
+
+    
+        </main>
+        <footer class="Stopka">
+            <div>Strona rezerwacyjna na potrzeby studiów</div>
+            <div>&copy; Alicja Duc-Burek</div>
+            
+        </footer>
+    </div>
+</div>
+
+</div>
+<ul>
+    <% for(let i=0; i<danezBazy.length; i++)  { %>
+    <li>
+        <%= danezBazy[i].imie %> <%= danezBazy[i].nazwisko %>
+    </li>
+    <% } %>
+</ul>
+<script src="/assets/js/index.js"></script>
+</body>
+</html>

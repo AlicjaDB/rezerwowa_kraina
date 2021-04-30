@@ -1,0 +1,415 @@
+body{
+    background-image:url(../img/tło.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding:0;
+    
+    
+  
+  }
+  .header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around; 
+    align-items:flex-end;
+    margin:0px;
+    padding: 0px;
+    width: 25vw;
+  }
+  
+  .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+  }
+  
+  
+  li{
+    
+    padding: 10px 15px;
+    background-color: #FFF;
+    font-size: 18px;
+    border-radius: 15px;
+    box-shadow: 6px 6 px 29px -4px rgba(0,0,0,0.75);
+    margin-top: 25px;
+    transition: 0.4s;
+    text-align: center;
+    display: block;
+    border: 2px solid #494949; 
+  }
+  
+  li:hover { 
+    background:coral;
+    color: #FFF;
+    
+   
+  }
+  
+  a{
+    color:black;
+    text-decoration: none;
+  } 
+  
+  form{
+    background-color:white;
+    height:550px;
+    width:650px;
+    margin:auto;
+    padding:25px;
+    opacity: 0.7; 
+    font-family:Tahoma;
+    font-size: 15px;
+    font-weight:normal;
+    border-radius: 10px;
+    padding-bottom : 50px;
+    
+  }
+  
+  .booking{
+  padding: 25px;
+  margin: 25px;
+  }
+  
+  
+  
+  .submit{
+  background: #FFF;
+  padding: 10px 15px;
+  color: #34495e;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6 px 29px -4px rgba(0,0,0,0.75);
+  margin-top: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+  text-align: center;
+  display: block;
+  border: 2px solid #494949;
+  
+  }
+  .submit:hover{
+  background: #34495e;
+  color: #FFF;
+  }
+  input{
+    font-size:18px;
+    font-family: Tahoma;
+    margin: 5px;
+    padding:10px;
+    display:inline-block;
+    border-radius: 10px;
+    
+   }
+  
+  select{
+    font-size: 15px;
+    font-family: Verdana;
+    margin: 5px;
+    padding:10px;
+    white-space: nowrap;
+    border-radius: 10px;
+    
+  }
+  
+  .container2{
+    display:flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    flex-direction: column;
+    row-gap:20px;
+    font-size: 15px;
+    font-family:Tahoma;
+    padding: 25px;
+    width: 51;
+    flex-wrap: wrap;
+    
+  
+  }
+  .logo img{
+  width: 50px;
+  height:50px;
+  border-radius: 5px;
+    
+  }
+  
+    
+  
+  footer{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 25px;
+    border-top-width: thin;
+    padding: 25px;
+    margin:25px;
+    color: white;
+  
+  }
+  
+  main{
+    display:flex;
+    margin: 100px;
+    width: 50%;
+  
+  }
+  /* /// weather ////   */
+  
+  .container3{
+  
+  width: 500px; 
+  height: 600px;   
+  background-color: #FFF;
+  display: block;
+  text-align: center;
+  padding: 5px;
+  margin: 0;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  margin-top: 55px;
+  opacity: 0,7;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 25px;
+  
+  
+  }
+  .container3 p{
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, border;
+  font-size: 25px;
+  color: #494949;
+  text-transform: uppercase;
+  font-weight: 600;
+  }
+  
+  .submit8:hover{
+  color: #ffffff;
+  background: #34495e;
+  border-color:#494949;
+  transition: all 0.4s ease 0s;
+  
+  }
+    
+  
+  /* //// data //// */
+  
+  .datetime{
+  
+  margin: 80px;
+  padding:5px 20px;
+  border: 2px solid #494949;
+  border-radius: 5px;
+  z-index: 55px;
+  margin-bottom: 525px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  
+  
+  
+  
+  }
+  .date{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  
+  
+  }
+  .time{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  
+  }
+  
+  
+  .autoprefixer{
+  user-select:none;
+  }
+  
+  /* /// popup/// */
+  .popup{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+  }
+  .popup h1{
+  color:#FFF;
+  font-size: 36px;
+  margin-bottom: 40px;
+  }
+  .button{
+  background: #FFF;
+  color: #34495e;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6 px 29px -4px rgba(0,0,0,0.75);
+  margin-top: 25px;
+  text-decoration: none;
+  transition: 0.4s;
+  text-align: center;
+  display: block;
+  margin: 30px auto;
+  width: 50%;
+  padding: 8px;
+  border: 1px solid gray;
+  }
+  .button:hover{
+  background: #34495e;
+  color: #FFF;
+  
+  }
+  
+  .popup-content{
+  
+  width:50%;
+  height:50vh;
+  position:fixed;
+  top: 100px;
+  left: 100px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  }
+  
+  .popup-content1{
+  height: 250px;
+  width: 500px;
+  background:white;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+  
+  }
+  
+  .input1{
+  margin: 30px auto;
+  display: block;
+  width: 50%;
+  padding: 8px;
+  border: 1px solid gray;
+  }
+  
+  .input2{
+  margin: 30px auto;
+  display: block;
+  width: 50%;
+  padding: 8px;
+  border: 1px solid gray;
+  }
+  .user{
+  position: relative;
+  top:5px;
+  right: 5px;
+  background: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+  
+  
+  
+  }
+  
+  .cancel{
+  position: absolute;
+  top:-15px;
+  right: -15px;
+  background: white;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+  cursor: pointer;
+  }
+  /* //// result //// */
+  
+  
+  .wyswietlanie{
+  width: 900px; 
+  height: 200px;   
+  background-color: #FFF;
+  display: block;
+  text-align: center;
+  padding: 35px;
+  margin: 50px;
+  border-radius: 10px;
+  opacity: 0,7;
+  
+  
+  }
+  
+  table, tr, td{
+  border-collapse:collapse;
+  border:1px solid black;
+  padding:15px;
+  height: 35px;
+  
+  
+  }
+  .submit6:hover{
+  color: #ffffff;
+  background: #34495e;
+  border-color:#494949;
+  transition: all 0.4s ease 0s;
+  
+  
+  
+  
+  }
+  
+  .submit6{
+  background: #FFF;
+  padding: 10px 15px;
+  color: #34495e;
+  font-weight: bolder;
+  font-size: 18px;
+  border-radius: 5px;
+  box-shadow: 6px 6 px 29px -4px rgba(0,0,0,0.75);
+  text-decoration: none;
+  transition: 0.4s;
+  text-align: center;
+  border: 2px solid #494949;
+  display:flex;
+  width: 100px;
+  float:right;
+  margin: 25px;
+  }
+  
+  td{
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    width: 150px;
+  }
+  
+  /* ///// media //// */
+  
+  @media(max-width: 768px){
+    header #header, header nav, header li{
+      float:none;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+     font-size: 15px;
+    }
+    header{
+      padding-bottom: 15px;
+    }
+    main{
+      display: block;
+      justify-content: center;
+      text-align: center
+      margin 35px;
+    }
+}

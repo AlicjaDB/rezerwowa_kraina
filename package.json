@@ -1,18 +1,25 @@
 {
-  "name": "Rezerwowa_kraina",
+  "name": "mongo_node_27.02.2021",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "hbs": "^4.1.2"
-  },
-  "devDependencies": {},
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node app.js"
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "scss": "node-sass -watch scss -o css"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.4",
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
